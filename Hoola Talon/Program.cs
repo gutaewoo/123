@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using LeagueSharp;
@@ -281,6 +281,10 @@ namespace HoolaTalon
         static void CastItem()
         {
 
+            if (ItemData.Youmuus_Ghostblade.GetItem().IsReady())
+                ItemData.Youmuus_Ghostblade.GetItem().Cast();
+            if (ItemData.Youmuus_Ghostblade.GetItem().IsReady())
+                ItemData.Youmuus_Ghostblade.GetItem().Cast();
         }
         static void CastYoumoo()
         {
@@ -289,6 +293,11 @@ namespace HoolaTalon
         }
         static bool HasItem()
         {
+            if (ItemData.Youmuus_Ghostblade.GetItem().IsReady() || ItemData.Youmuus_Ghostblade.GetItem().IsReady())
+            {
+                return true;
+            }
+            return false;
         }
         
         
