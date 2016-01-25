@@ -281,10 +281,6 @@ namespace HoolaTalon
         static void CastItem()
         {
 
-            if (ItemData.Tiamat_Melee_Only.GetItem().IsReady())
-                ItemData.Tiamat_Melee_Only.GetItem().Cast();
-            if (ItemData.Ravenous_Hydra_Melee_Only.GetItem().IsReady())
-                ItemData.Ravenous_Hydra_Melee_Only.GetItem().Cast();
         }
         static void CastYoumoo()
         {
@@ -293,11 +289,6 @@ namespace HoolaTalon
         }
         static bool HasItem()
         {
-            if (ItemData.Tiamat_Melee_Only.GetItem().IsReady() || ItemData.Ravenous_Hydra_Melee_Only.GetItem().IsReady())
-            {
-                return true;
-            }
-            return false;
         }
         
         
