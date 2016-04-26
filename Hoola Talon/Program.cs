@@ -51,7 +51,7 @@ namespace HoolaTalon
             Game.PrintChat("Hoola Talon - Loaded Successfully, Good Luck! :)");
 
             Q = new Spell(SpellSlot.Q);
-            W = new Spell(SpellSlot.W, 700f);
+            W = new Spell(SpellSlot.W, 650f);
             E = new Spell(SpellSlot.E, 700f);
             R = new Spell(SpellSlot.R, 600f) { Delay = 0.1f, Speed = 902f * 2 };
 
